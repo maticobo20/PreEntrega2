@@ -125,7 +125,7 @@ span a {
 .banner {
     width: 100%;
     height: 65vh;
-    background-image: url(/img/banner1.jpg);
+    background-image: url(./img/banner1.jpg);
     background-size: cover;
     background-position: 69%;
     border-radius: 10px;
