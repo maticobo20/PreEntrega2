@@ -62,6 +62,9 @@ a .logo {
     font-weight: 600;
     text-transform: uppercase;
 }
+.menu .navbar {
+    --bs-navbar-padding-y: 0;
+}
 .menu .navbar ul li {
     position: relative;
     float: left;
@@ -75,6 +78,9 @@ a .logo {
 }
 .menu .navbar ul li a:hover {
     color: #15a4f9;
+}
+.uldl, ol, ul {
+    margin-bottom: 0;
 }
 #menu {
     display: none;
