@@ -104,7 +104,9 @@ footer {
     margin-top: auto;
     
 }
-
+.local {
+    margin-bottom: 0.7rem;
+}
 .social-link {
     text-align: center;
     line-height: 30px;
