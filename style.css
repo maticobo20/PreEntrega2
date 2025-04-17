@@ -203,7 +203,7 @@ h6 {
 .search-input {
     float: left;
     padding: 10px;
-    margin-left: 10%;
+    margin-left: 70px;
     width: 40%;
     border-radius: 50px;
     border-bottom: 1px solid gray;
@@ -218,7 +218,7 @@ h6 {
 
 .select-order {
     position: relative;
-    left: 20%;
+    left: 350px;
     padding: 10px;
     border-radius: 50px;
     outline: 0;
@@ -433,17 +433,16 @@ div label {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-.mapa-img {
+.embed-responsive {
     text-align: center;
-    
- }
+}
 .width {
     float: right;
     width: 50%;
     padding: 0 30px;
   }
 /*-----BREACKPOINTS  1400px----*/
-@media screen and (max-width:1400px) {
+@media (600px <= width <= 1400px) {
     a .logo {
         padding: 10px;
     }
@@ -473,13 +472,17 @@ div label {
         display: initial;
     }
     
+    .select-order {
+        left: 80px;
+    }
+    
     .products-content {
         justify-content: center;
         gap: 25px;
     }
     .form-group {
         width: 50%;
-        padding: 0 100px;
+        padding: 0 10px;
     }
     .width {
         float: right;
@@ -488,7 +491,10 @@ div label {
       }
     .contacto1, textarea {
         margin-left: 10px;
-        width: 75vh;
+        width: 85%;
+    }
+    .btn-foro {
+        margin-left: 340px;
     }
     h4 {
         margin-left: 1.5em;
@@ -497,73 +503,8 @@ div label {
     .banner {
         height: 45vh;
     }
-    .btn-banner {
-        padding: 8px 15px;
-        border-radius: 8px;
-        margin-top: 2px;
-    }
-    .bannerh2 {
-        font-size: 50px;
-    }
-    .bannerh6 {
-        font-weight: bold;
-
-    }
-    body {
-        min-height: 100vh;
-    }
-
-}
-
-/*-----BREACKPOINTS  1200px----*/
-
-@media screen and (max-width:1200px) {
-    a .logo {
-        padding: 5px;
-    }
-    
-    .menu {
-        padding: 30px;
-    }
-    .menu label {
-        display: initial;
-    }
-    .back {
-        padding: 47px 0;
-    }
-    .menu .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: coral;
-        display: none;
-    }
-    .menu .navbar ul li {
-        width: 100%;
-    }
-    #menu:checked ~ .navbar {
-        display: initial;
-    }
-    
-    .products-content {
-        justify-content: center;
-        gap: 25px;
-    }
-    .form-group {
-        width: 50%;
-        padding: 0 30px;
-    }
-    .contacto1, textarea {
-        width: 75vh;
-    }
-    .width {
-        float: right;
-        width: 50%;
-        padding: 0 30px;
-      }
-    .banner {
-        height: 50vh;
+    .banner-txt {
+        padding: 30px 0;
     }
     .btn-banner {
         padding: 8px 15px;
@@ -580,46 +521,12 @@ div label {
     body {
         min-height: 100vh;
     }
-    
-}
 
-/*-----BREACKPOINTS  992px----*/
-
-@media screen and (max-width:992px) {
-    .banner {
-        height: 41vh;
-    }
-    .btn-banner {
-        padding: 8px 15px;
-        border-radius: 8px;
-        margin-top: 2px;
-    }
-    .bannerh2 {
-        font-size: 40px;
-    }
-    .bannerh6 {
-        font-size: 50px;
-        font-weight: bold;
-    }
-    .form-group {
-        width: 50%;
-    }
-    .width {
-        float: right;
-        width: 50%;
-        padding: 0 30px;
-      }
-    .contacto1, textarea {
-        width: 65vh;
-    }
-    .btn-foro {
-        margin-left: 350px;
-    }
 }
 
 /*-----BREACKPOINTS  768px----*/
 
-@media screen and (max-width:768px) {
+@media (500px <= width <= 600px) {
     a .logo {
         padding: 5px;
     }
@@ -648,6 +555,12 @@ div label {
     #menu:checked ~ .navbar {
         display: initial;
     }
+    .banner {
+        height: 45vh;
+    }
+    .banner-txt {
+        padding: 30px 0;
+    }
     .btn-banner {
         padding: 8px 15px;
         border-radius: 8px;
@@ -661,7 +574,11 @@ div label {
         font-weight: bold;
     }
     .container {
-        margin: 10px 30px
+        margin: 10px 0;
+    }
+
+    .select-order {
+        left: 25px;
     }
 
     .products-content{
@@ -672,16 +589,21 @@ div label {
     }
     .form-group {
         width: 50%;
-        margin-left: 90px;
+        margin-left: 30px;
     }
     .width {
-        margin-right: 160px;
+        margin-right: 5px;
         margin-bottom: 30px;
-        width: 60%;
+        width: 100%;
         padding: 0 30px;
-      }
+    }
+    .btn-foro {
+        margin-left: 300px;
+    }
+      
     form .contacto1 {
-        margin: 0 30px;
+        margin: 0 10px;
+        width: 500px;
     }
     h4 {
         margin-left: 50px;
@@ -690,16 +612,16 @@ div label {
 
 }
 
-/*-----BREACKPOINTS  576px----*/
-
-@media screen and (max-width:576px) {
-    a .logo {
-        padding: 5px;
-    }
+@media (320px <= width <= 500px) {
     
+    .menu-icono {
+        margin-right: 0;
+    }
+
     .menu {
         padding: 30px;
     }
+    
     .menu label {
         display: initial;
     }
@@ -713,7 +635,7 @@ div label {
         right: 0;
         background-color: coral;
         display: none;
-        width: 93%;
+        width: 95%;
     }
     .menu .navbar ul li {
         width: 100%;
@@ -721,39 +643,73 @@ div label {
     #menu:checked ~ .navbar {
         display: initial;
     }
-    
     .banner {
-        height: 38vh;
+        height: 45vh;
     }
-
-    .bannerh2 {
-        font-size: 30px;
-        
-    }
-    .bannerh6 {
-        font-size: 50px;
-        font-weight: bold;
+    .banner-txt {
+        padding: 30px 0;
     }
     .btn-banner {
         padding: 8px 15px;
         border-radius: 8px;
         margin-top: 2px;
     }
-    .width {
-        margin-right: 60px;
-        margin-bottom: 30px;
-        width: 80%;
-        padding: 0 30px;
+    .bannerh2 {
+        font-size: 45px;
     }
+    .bannerh6 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .container {
+        margin: 10px 0;
+    }
+    .search-input {
+        margin-left: 20px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .select-order {
+        left: 25px;
+    }
+
+    .products-content{
+        justify-content: center;
+    }
+    .txt {
+        padding: 0;
+    }
+    h1 {
+        font-size: 35px;
+    }
+
     .form-group {
         width: 50%;
         margin-left: 0;
     }
-    
-    input .btn {
-        margin-left: 300px;
+    .width {
+        margin-right: 5px;
+        margin-bottom: 30px;
+        width: 100%;
+        padding: 0 30px;
+      }
+    form .contacto1 {
+        margin: 0 10px;
+        width: 185%;
     }
     .btn-foro {
-        margin-left: 400px;
+        margin-left: 340px;
+    }
+    
+    h4 {
+        margin-left: 50px;
+        margin-top: 7px;
+    }
+    .about {
+        padding: 5px;
+    }
+    .btn-2 {
+        margin-bottom: 10px;
     }
 }
