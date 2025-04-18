@@ -182,17 +182,16 @@ h6 {
 }
 .btn-foro {
     display: inline-block;
-    text-align: center;
+    text-align: left;
     padding: 11px 20px;
     background-color: black;
     color: white;
     border-radius: 5px;
     margin-top: 10px;
+    margin-left: 60px;
     width: 100px;
-    margin-left: 500px;
     cursor: pointer;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;  
 }
 .btn-foro:active {
     background-color: lightblue;
@@ -441,7 +440,10 @@ div label {
     width: 50%;
     padding: 0 30px;
   }
-/*-----BREACKPOINTS  1400px----*/
+
+
+/*-----BREACKPOINTS  600px a 1400px----*/
+
 @media (600px <= width <= 1400px) {
     a .logo {
         padding: 10px;
@@ -494,7 +496,7 @@ div label {
         width: 85%;
     }
     .btn-foro {
-        margin-left: 340px;
+        margin-left: 60px;
     }
     h4 {
         margin-left: 1.5em;
@@ -509,7 +511,8 @@ div label {
     .btn-banner {
         padding: 8px 15px;
         border-radius: 8px;
-        margin-top: 2px;
+        margin-top: 40px;
+        font-size: 23px;
     }
     .bannerh2 {
         font-size: 50px;
@@ -524,13 +527,13 @@ div label {
 
 }
 
-/*-----BREACKPOINTS  768px----*/
+/*-----BREACKPOINTS  500px a 600px----*/
 
 @media (500px <= width <= 600px) {
     a .logo {
         padding: 5px;
     }
-    
+
     .menu {
         padding: 30px;
     }
@@ -564,7 +567,8 @@ div label {
     .btn-banner {
         padding: 8px 15px;
         border-radius: 8px;
-        margin-top: 2px;
+        margin-top: 40px;
+        font-size: 23px;
     }
     .bannerh2 {
         font-size: 45px;
@@ -598,7 +602,7 @@ div label {
         padding: 0 30px;
     }
     .btn-foro {
-        margin-left: 300px;
+        margin-left: 60px;
     }
       
     form .contacto1 {
@@ -611,6 +615,8 @@ div label {
     }
 
 }
+
+/*-----BREACKPOINTS  320px a 500px----*/
 
 @media (320px <= width <= 500px) {
     
@@ -652,13 +658,14 @@ div label {
     .btn-banner {
         padding: 8px 15px;
         border-radius: 8px;
-        margin-top: 2px;
+        margin-top: 30px;
+        font-size: 23px;
     }
     .bannerh2 {
         font-size: 45px;
     }
     .bannerh6 {
-        font-size: 30px;
+        font-size: 70px;
         font-weight: bold;
     }
     .container {
@@ -699,7 +706,7 @@ div label {
         width: 185%;
     }
     .btn-foro {
-        margin-left: 340px;
+        margin-left: 60px;
     }
     
     h4 {
