@@ -295,8 +295,6 @@ h6 {
 
 .accordion {
     margin: 0 auto;
-    padding-right: 5px;
-    padding-left: 5px;
     width: 100%;
     max-width: 750px;
     min-height: 100vh;
@@ -526,7 +524,10 @@ div label {
     body {
         min-height: 100vh;
     }
-
+    .accordion {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
 }
 
 /*-----BREACKPOINTS  500px a 600px----*/
@@ -614,6 +615,10 @@ div label {
     h4 {
         margin-left: 50px;
         margin-top: 7px;
+    }
+    .accordion {
+        padding-right: 5px;
+        padding-left: 5px;
     }
 
 }
@@ -720,5 +725,9 @@ div label {
     }
     .btn-2 {
         margin-bottom: 10px;
+    }
+    .accordion {
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }
