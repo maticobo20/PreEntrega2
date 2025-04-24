@@ -1,0 +1,174 @@
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: $secundary-color;
+    text-shadow: 1px 2px 2px white, 0 0 5px $primary-color;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.btn-banner {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: $secundary-color;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 18px;
+    border-radius: 5px;
+    font-size: 23px;
+    &:active {
+        background-color: $cuarto-color;
+    }
+}
+.btn-2 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: $secundary-color;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    &:active {
+        background-color: $cuarto-color;
+    }
+}
+
+form {
+    .btn-foro {
+        display: inline-block;
+        text-align: left;
+        padding: 11px 20px;
+        background-color: $secundary-color;
+        color: white;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 60px;
+        width: 100px;
+        cursor: pointer;
+        text-transform: uppercase;
+        &:active {
+            background-color: $cuarto-color;
+        }
+    }
+}
+.search-input {
+    float: left;
+    padding: 10px;
+    margin-left: 70px;
+    width: 40%;
+    border-radius: 50px;
+    border-bottom: 1px solid gray;
+    outline: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.select-order {
+    position: relative;
+    left: 350px;
+    width: 28%;
+    padding: 10px;
+    border-radius: 50px;
+    outline: 0;
+    cursor: pointer;
+    }
+
+@include tablet {
+    main {
+        .banner {
+            height: 45vh;
+        }
+        .banner-txt {
+            padding: 30px 0;
+        }
+        .btn-banner {
+            border-radius: 8px;
+            margin-top: 0;
+        }
+        .bannerh2 {
+            font-size: 50px;
+        }
+        .bannerh6 {
+            font-weight: bold;
+            font-size: 60px;
+            text-shadow: 1px 2px 2px white, 0 0 5px $primary-color;
+        }
+    }
+    form {
+        .btn-foro {
+            margin-left: 60px;
+        }
+    }
+    .select-order {
+        left: 80px;
+        width: 35%;
+    }
+}
+
+@include mobile {
+    main {
+        .banner {
+            height: 45vh;
+        }
+        .banner-txt {
+            padding: 30px 0;
+        }
+        .bannerh2 {
+            font-size: 38px;
+        }
+        .bannerh6 {
+            font-size: 45px;
+            font-weight: bold;
+            text-shadow: 1px 2px 2px white, 0 0 5px $primary-color;
+        }
+    }
+    form {
+        .btn-foro {
+            margin-left: 60px;
+        }
+    }
+    .select-order {
+        left: 25px;
+    }
+}
+@include mobile1 {
+    h1 {
+        font-size: 35px;
+    }
+    main {
+        .banner {
+            height: 45vh;
+        }
+        .banner-txt {
+            padding-top: 10px;
+        }
+        .btn-banner {
+            padding: 10px 20px;
+        }
+
+        .bannerh2 {
+            font-size: 38px;
+        }
+        .bannerh6 {
+            font-size: 60px;
+            font-weight: bold;
+            text-shadow: 1px 2px 2px white, 0 0 5px $primary-color;
+        }
+    }
+    .search-input {
+        margin-left: 20px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .select-order {
+        left: 25px;
+        width: 35%;
+    }
+    form {
+        .btn-foro {
+            margin-left: 60px;
+        }
+    }
+}

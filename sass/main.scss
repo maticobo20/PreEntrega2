@@ -1,0 +1,16 @@
+// abstracts
+@import "./abstracts/media-queries";
+@import "./abstracts/variables";
+// bases
+@import "./base/reset";
+// layouts
+@import "./layout/navbar";
+@import "./layout/footer";
+// pages
+@import "./pages/home";
+@import "./pages/productos";
+@import "./pages/quienes-somos";
+@import "./pages/preguntas-frecuentes";
+@import "./pages/contacto";
+// componentes
+@import "./components/buttons";

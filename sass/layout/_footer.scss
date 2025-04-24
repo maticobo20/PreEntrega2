@@ -1,0 +1,29 @@
+footer {
+    background-color: $primary-color;
+    padding: 0.30rem 0;
+    text-align: center;
+    margin-top: auto;
+}
+footer {
+    h3 {
+        font-style: italic;
+        font-size: 18px;
+        text-align: center;
+        line-height: 5px;
+    }
+    nav {
+        ul {
+            margin-bottom: 0.7rem;
+        }
+        .social-link {
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+    span {
+        a {
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+}

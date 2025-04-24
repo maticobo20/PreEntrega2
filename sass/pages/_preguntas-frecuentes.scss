@@ -1,0 +1,73 @@
+.container34 {
+    .accordion {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 750px;
+        min-height: 100vh;
+    }
+}
+.accordion {
+    li {
+        list-style: none;
+        width: 100%;
+        padding: 5px;
+    }    
+    li {
+        label {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            line-height: 1.2;
+            padding: 20px;
+            margin-bottom: 2px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+        }
+    }
+}
+label {
+    background-color: $primary-color;
+    border-radius: 20px;
+    &::after {
+        position: absolute;
+        font-size: 32px;
+        right: 20px;
+        transition: transform 0.5s;
+    }
+}
+.accordion {
+    .content {
+        text-align: center;
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s, padding 0.5s;
+        line-height: 1.2;
+    }
+}
+input[type='checkbox'] {
+    display: none;
+    &:checked ~ .content {
+        max-height: 600px;
+        padding: 20px 20px;
+    }
+}
+@include tablet {
+    .accordion {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+@include mobile {
+    .accordion {
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+}
+@include mobile1 {
+    .accordion {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
