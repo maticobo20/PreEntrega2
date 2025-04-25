@@ -10,16 +10,6 @@ header {
         font-style: italic;
         font-size: 20px;
     }
-    .menu {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        z-index: 1000;
-    }
     a {
         .logo {
             font-size: 24px;
@@ -32,6 +22,18 @@ header {
         }
     }
     .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        label {
+            display: none;
+            cursor: pointer;
+        }
         .navbar {
             --bs-navbar-padding-y: 0;
         }
@@ -57,12 +59,6 @@ header {
     #menu {
         display: none;
     }
-    .menu {
-        label {
-            display: none;
-            cursor: pointer;
-        }
-    }
     .menu-icono {
         width: 25px;
         margin-right: 40px;
@@ -75,16 +71,9 @@ header {
         }
         .menu {
             padding: 30px;
-        }
-        .menu {
             label {
                 display: initial;
             }
-        }
-        .back {
-            padding: 47px 0;
-        }
-        .menu {
             .navbar {
                 position: absolute;
                 top: 100%;
@@ -92,10 +81,6 @@ header {
                 right: 0;
                 background-color: $primary-color;
                 display: none;
-            }
-        }
-        .menu {
-            .navbar {
                 ul {
                     li {
                         width: 100%;
@@ -103,43 +88,43 @@ header {
                 }
             }
         }
+        .back {
+            padding: 47px 0;
+        }
+        
         #menu:checked ~ .navbar {
             display: initial;
         }
     }
-@include mobile {
-    a {
-        .logo {
-            padding: 5px;
+    @include mobile {
+        a {
+            .logo {
+                padding: 5px;
+            }
         }
-    }
-    .menu {
-        padding: 30px;
-    }
-    .menu {
-        label {
-            display: initial;
-        }
-    }
-    .back {
-        padding: 47px 0;
-    }
-    .menu {
-        .navbar {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background-color: $primary-color;
-            display: none;
-            width: 95%;
-        }
-        .navbar {
-            ul {
-                li {
-                    width: 100%;
+        .menu {
+            padding: 30px;
+            label {
+                display: initial;
+            }
+            .navbar {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: $primary-color;
+                display: none;
+                width: 95%;
+                ul {
+                    li {
+                        width: 100%;
+                    }
                 }
             }
+        }
+        
+        .back {
+            padding: 47px 0;
         }
     }
     #menu:checked ~ .navbar {
@@ -149,19 +134,9 @@ header {
 @include mobile1 {
     .menu {
         padding: 30px;
-    }
-    .menu-icono {
-        margin-right: 0;
-    }
-    .menu {
         label {
             display: initial;
         }
-    }
-    .back {
-        padding: 47px 0;
-    }
-    .menu {
         .navbar {
             position: absolute;
             top: 100%;
@@ -170,8 +145,6 @@ header {
             background-color: $primary-color;
             display: none;
             width: 95%;
-        }
-        .navbar {
             ul {
                 li {
                     width: 100%;
@@ -179,8 +152,13 @@ header {
             }
         }
     }
+    .menu-icono {
+        margin-right: 0;
+    }
+    .back {
+        padding: 47px 0;
+    }
     #menu:checked ~ .navbar {
         display: initial;
     }
-}
 }

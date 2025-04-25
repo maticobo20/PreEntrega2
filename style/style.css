@@ -32,6 +32,15 @@ header .container {
   font-style: italic;
   font-size: 20px;
 }
+header a .logo {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+header a:hover {
+  color: #15a4f9;
+}
 header .menu {
   position: absolute;
   top: 0;
@@ -42,14 +51,9 @@ header .menu {
   justify-content: space-between;
   z-index: 1000;
 }
-header a .logo {
-  font-size: 24px;
-  color: #000000;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-header a:hover {
-  color: #15a4f9;
+header .menu label {
+  display: none;
+  cursor: pointer;
 }
 header .menu .navbar {
   --bs-navbar-padding-y: 0;
@@ -73,10 +77,6 @@ header .uldl, header ol, header ul {
 header #menu {
   display: none;
 }
-header .menu label {
-  display: none;
-  cursor: pointer;
-}
 header .menu-icono {
   width: 25px;
   margin-right: 40px;
@@ -91,9 +91,6 @@ header .menu-icono {
   header .menu label {
     display: initial;
   }
-  header .back {
-    padding: 47px 0;
-  }
   header .menu .navbar {
     position: absolute;
     top: 100%;
@@ -104,6 +101,9 @@ header .menu-icono {
   }
   header .menu .navbar ul li {
     width: 100%;
+  }
+  header .back {
+    padding: 47px 0;
   }
   header #menu:checked ~ .navbar {
     display: initial;
@@ -119,9 +119,6 @@ header .menu-icono {
   header .menu label {
     display: initial;
   }
-  header .back {
-    padding: 47px 0;
-  }
   header .menu .navbar {
     position: absolute;
     top: 100%;
@@ -134,40 +131,43 @@ header .menu-icono {
   header .menu .navbar ul li {
     width: 100%;
   }
-  header #menu:checked ~ .navbar {
-    display: initial;
+  header .back {
+    padding: 47px 0;
   }
 }
-@media (320px <= width <= 500px) {
-  header .menu {
-    padding: 30px;
-  }
-  header .menu-icono {
-    margin-right: 0;
-  }
-  header .menu label {
-    display: initial;
-  }
-  header .back {
-    padding: 47px 0;
-  }
-  header .menu .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #ff7f50;
-    display: none;
-    width: 95%;
-  }
-  header .menu .navbar ul li {
-    width: 100%;
-  }
-  header #menu:checked ~ .navbar {
-    display: initial;
-  }
+header #menu:checked ~ .navbar {
+  display: initial;
 }
 
+@media (320px <= width <= 500px) {
+  .menu {
+    padding: 30px;
+  }
+  .menu label {
+    display: initial;
+  }
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ff7f50;
+    display: none;
+    width: 95%;
+  }
+  .menu .navbar ul li {
+    width: 100%;
+  }
+  .menu-icono {
+    margin-right: 0;
+  }
+  .back {
+    padding: 47px 0;
+  }
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+}
 footer {
   background-color: #ff7f50;
   padding: 0.3rem 0;
