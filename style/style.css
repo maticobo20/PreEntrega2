@@ -516,6 +516,9 @@ h1 {
 .btn-banner:active {
   background-color: #add8e6;
 }
+.btn-banner:hover {
+  transform: scale(1.01);
+}
 
 .btn-2 {
   display: inline-block;
@@ -528,6 +531,9 @@ h1 {
 }
 .btn-2:active {
   background-color: #add8e6;
+}
+.btn-2:hover {
+  transform: scale(1.01);
 }
 
 form .btn-foro {
@@ -546,6 +552,9 @@ form .btn-foro {
 form .btn-foro:active {
   background-color: #add8e6;
 }
+form .btn-foro:hover {
+  transform: scale(1.01);
+}
 
 .search-input {
   float: left;
@@ -558,6 +567,9 @@ form .btn-foro:active {
 }
 .search-input:focus {
   box-shadow: none;
+}
+.search-input:hover {
+  transform: scale(1.01);
 }
 
 .select-order {

@@ -20,6 +20,9 @@ h1 {
     &:active {
         background-color: $cuarto-color;
     }
+    &:hover {
+        transform: scale(1.01);
+    }
 }
 .btn-2 {
     display: inline-block;
@@ -31,6 +34,9 @@ h1 {
     text-transform: uppercase;
     &:active {
         background-color: $cuarto-color;
+    }
+    &:hover {
+        transform: scale(1.01);
     }
 }
 
@@ -50,6 +56,9 @@ form {
         &:active {
             background-color: $cuarto-color;
         }
+        &:hover {
+            transform: scale(1.01);
+        }
     }
 }
 .search-input {
@@ -62,6 +71,9 @@ form {
     outline: 0;
     &:focus {
         box-shadow: none;
+    }
+    &:hover {
+        transform: scale(1.01);
     }
 }
 
