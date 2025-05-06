@@ -4,11 +4,12 @@ section {
         margin: 0 auto;
     }
     .product {
-        h3 {
+        h4 {
             color: $secundary-color;
             font-size: 16px;
             text-transform: uppercase;
             margin-bottom: 15px;
+            text-align: center;
         }
     }
     .products-content {

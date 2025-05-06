@@ -177,7 +177,7 @@ footer {
   margin-top: auto;
 }
 
-footer h3 {
+footer h5 {
   font-style: italic;
   font-size: 18px;
   text-align: center;
@@ -227,11 +227,12 @@ section #lista1 {
   max-width: 1200px;
   margin: 0 auto;
 }
-section .product h3 {
+section .product h4 {
   color: #000000;
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 15px;
+  text-align: center;
 }
 section .products-content {
   display: flex;
