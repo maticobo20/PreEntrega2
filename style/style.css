@@ -441,6 +441,7 @@ div label {
 
 .embed-responsive {
   text-align: center;
+  border: 0;
 }
 
 .img-contacto1 .width {
