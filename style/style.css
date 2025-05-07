@@ -80,7 +80,6 @@ header #menu {
 }
 header .menu-icono {
   width: 25px;
-  margin-right: 40px;
 }
 @media (600px <= width <= 1400px) {
   header a .logo p {
@@ -102,9 +101,6 @@ header .menu-icono {
   }
   header .menu .navbar ul li {
     width: 100%;
-  }
-  header .menu-icono {
-    margin-right: 40px;
   }
   header .back {
     padding: 47px 0;
@@ -134,9 +130,6 @@ header .menu-icono {
   }
   header .menu .navbar ul li {
     width: 100%;
-  }
-  header .menu-icono {
-    margin-right: 40px;
   }
   header .back {
     padding: 47px 0;

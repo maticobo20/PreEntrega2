@@ -63,7 +63,6 @@ header {
     }
     .menu-icono {
         width: 25px;
-        margin-right: 40px;
     }
     @include tablet {
         a {
@@ -91,9 +90,6 @@ header {
                     }
                 }
             }
-        }
-        .menu-icono {
-            margin-right: 40px;
         }
         .back {
             padding: 47px 0;
@@ -130,9 +126,6 @@ header {
                     }
                 }
             }
-        }
-        .menu-icono {
-            margin-right: 40px;
         }
         .back {
             padding: 47px 0;
