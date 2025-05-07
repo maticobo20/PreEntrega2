@@ -26,7 +26,7 @@ a {
 header .back {
   padding: 32px 0;
   background-color: #ff7f50;
-  font-weight: 700;
+  font-weight: bold;
 }
 header .container {
   max-width: 1100px;
@@ -34,13 +34,12 @@ header .container {
   font-style: italic;
   font-size: 20px;
 }
-header a .logo {
-  font-size: 24px;
+header .container a .logo p {
   color: #000000;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
 }
-header a:hover {
+header .container a .logo:hover {
   color: #15a4f9;
 }
 header .menu {
@@ -84,7 +83,7 @@ header .menu-icono {
   margin-right: 40px;
 }
 @media (600px <= width <= 1400px) {
-  header a .logo {
+  header a .logo p {
     padding: 10px;
   }
   header .menu {
@@ -104,6 +103,9 @@ header .menu-icono {
   header .menu .navbar ul li {
     width: 100%;
   }
+  header .menu-icono {
+    margin-right: 40px;
+  }
   header .back {
     padding: 47px 0;
   }
@@ -112,8 +114,8 @@ header .menu-icono {
   }
 }
 @media (500px <= width <= 600px) {
-  header a .logo {
-    padding: 5px;
+  header .container .logo p {
+    font-size: 23px;
   }
   header .menu {
     padding: 30px;
@@ -133,6 +135,9 @@ header .menu-icono {
   header .menu .navbar ul li {
     width: 100%;
   }
+  header .menu-icono {
+    margin-right: 40px;
+  }
   header .back {
     padding: 47px 0;
   }
@@ -140,15 +145,18 @@ header .menu-icono {
 header #menu:checked ~ .navbar {
   display: initial;
 }
-
 @media (320px <= width <= 500px) {
-  .menu {
-    padding: 30px;
+  header .container .logo {
+    padding: 5px;
+    font-size: 23px;
   }
-  .menu label {
+  header .menu {
+    padding: 20px;
+  }
+  header .menu label {
     display: initial;
   }
-  .menu .navbar {
+  header .menu .navbar {
     position: absolute;
     top: 100%;
     left: 0;
@@ -157,19 +165,17 @@ header #menu:checked ~ .navbar {
     display: none;
     width: 95%;
   }
-  .menu .navbar ul li {
+  header .menu .navbar ul li {
     width: 100%;
   }
-  .menu-icono {
-    margin-right: 0;
-  }
-  .back {
+  header .back {
     padding: 47px 0;
   }
-  #menu:checked ~ .navbar {
+  header #menu:checked ~ .navbar {
     display: initial;
   }
 }
+
 footer {
   background-color: #ff7f50;
   padding: 0.3rem 0;

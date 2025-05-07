@@ -2,25 +2,27 @@ header {
     .back {
         padding: 32px 0;
         background-color: $primary-color;
-        font-weight: 700;
+        font-weight: bold;
     }
     .container {
         max-width: 1100px;
         margin: 0 auto;
         font-style: italic;
         font-size: 20px;
-    }
-    a {
-        .logo {
-            font-size: 24px;
-            color: $secundary-color;
-            font-weight: 600;
-            text-transform: uppercase;
-        } 
-        &:hover {
-            color: $terciario-color;
+        a {
+            .logo {
+                p {
+                    color: $secundary-color;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+                &:hover {
+                    color: $terciario-color;
+                }
+            } 
         }
     }
+    
     .menu {
         position: absolute;
         top: 0;
@@ -66,7 +68,9 @@ header {
     @include tablet {
         a {
             .logo {
-                padding: 10px;
+                p {
+                    padding: 10px;
+                }
             }
         }
         .menu {
@@ -88,6 +92,9 @@ header {
                 }
             }
         }
+        .menu-icono {
+            margin-right: 40px;
+        }
         .back {
             padding: 47px 0;
         }
@@ -97,9 +104,11 @@ header {
         }
     }
     @include mobile {
-        a {
+        .container {
             .logo {
-                padding: 5px;
+                p {
+                 font-size: 23px;   
+                }
             }
         }
         .menu {
@@ -122,7 +131,9 @@ header {
                 }
             }
         }
-        
+        .menu-icono {
+            margin-right: 40px;
+        }
         .back {
             padding: 47px 0;
         }
@@ -130,35 +141,39 @@ header {
     #menu:checked ~ .navbar {
         display: initial;
     }
-}
-@include mobile1 {
-    .menu {
-        padding: 30px;
-        label {
-            display: initial;
+    @include mobile1 {
+        .container {
+            .logo {
+                padding: 5px;
+                font-size: 23px;
+            }
         }
-        .navbar {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background-color: $primary-color;
-            display: none;
-            width: 95%;
-            ul {
-                li {
-                    width: 100%;
+        .menu {
+            padding: 20px;
+            label {
+                display: initial;
+            }
+            .navbar {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: $primary-color;
+                display: none;
+                width: 95%;
+                ul {
+                    li {
+                        width: 100%;
+                    }
                 }
             }
         }
-    }
-    .menu-icono {
-        margin-right: 0;
-    }
-    .back {
-        padding: 47px 0;
-    }
-    #menu:checked ~ .navbar {
-        display: initial;
+        
+        .back {
+            padding: 47px 0;
+        }
+        #menu:checked ~ .navbar {
+            display: initial;
+        }
     }
 }
