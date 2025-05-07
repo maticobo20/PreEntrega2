@@ -10,7 +10,7 @@ body {
     font-family: "nunito", sans-serif;
     font-style: italic;
     background-color: #f1f1f1a6;
-    @include tablet {
+    @include mq-large {
         min-height: 100vh;
     }
 }

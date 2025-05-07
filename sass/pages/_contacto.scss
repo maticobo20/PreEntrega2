@@ -3,6 +3,14 @@ div {
         margin-left: 50px;
         box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.2);
         border-radius: 20px;
+        @include mq-medium {
+            margin: 0 10px;
+            width: 190%;
+        }
+        @include mq-small {
+            margin: 0 10px;
+            width: 185%;
+        }
     } 
 }
 h4 {
@@ -14,6 +22,18 @@ h4 {
 .form-group {
     display: flex;
     flex-direction: column;
+    @include mq-large {
+        width: 50%;
+        padding: 0 10px;
+    }
+    @include mq-medium {
+        width: 50%;
+        margin-left: 0;
+    }
+    @include mq-small {
+        width: 50%;
+        margin-left: 0;
+    }
 }
 div {
     label {
@@ -32,6 +52,10 @@ div {
     color: $secundary-color;
     outline: none;
     text-align: left;
+    @include mq-large {
+        margin-left: 10px;
+        width: 85%;
+    }
 }
 .contacto1::placeholder, textarea::placeholder {
     color: $secundary-color;
@@ -55,59 +79,21 @@ div {
         width: 50%;
         float: right;
         padding: 0 30px;
-    }
-}
-@include tablet {
-    .form-group {
-        width: 50%;
-        padding: 0 10px;
-    }
-    .width {
-        width: 100%;
-        padding: 0 30px;
-    }
-    .contact1, textarea {
-        margin-left: 10px;
-        width: 85%;
-    }
-}
-@include mobile {
-    .form-group {
-        width: 50%;
-        margin-left: 0;
-    }
-    .img-contacto1 {
-        .width {
-        margin-right: 5px;
-        margin-bottom: 30px;
-        width: 100%;
-        padding: 0 30px;
+        @include mq-large {
+            width: 100%;
+            padding: 0 30px;
         }
-    }
-    form {
-        .contacto1 {
-            margin: 0 10px;
-            width: 190%;
+        @include mq-medium {
+            margin-left: 5px;
+            margin-bottom: 30px;
+            width: 100%;
+            padding: 0 30px;
         }
-    }
-}
-@include mobile1 {
-    .form-group {
-        width: 50%;
-        margin-left: 0;
-    }
-    .img-contacto1 {
-        .width {
-        margin-right: 5px;
-        margin-bottom: 30px;
-        width: 100%;
-        padding: 0 30px;
-        }
-    }
-    form {
-        .contacto1 {
-            margin: 0 10px;
-            width: 185%;
+        @include mq-small {
+            margin-right: 5px;
+            margin-bottom: 30px;
+            width: 100%;
+            padding: 0 30px;
         }
     }
 }

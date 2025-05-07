@@ -22,6 +22,16 @@ section {
         margin-left: 30px;
         margin-right: 30px;
         margin-top: 30px;
+        @include mq-large {
+            justify-content: center;
+            gap: 25px;
+        }
+        @include mq-medium {
+            justify-content: center;
+        }
+        @include mq-small {
+            justify-content: center;
+        }
     }
     .product {
         text-align: center;
@@ -52,27 +62,5 @@ section {
     }
     .price {
         font-weight: 800;
-    }
-}
-@include tablet {
-    section {
-        .products-content {
-            justify-content: center;
-            gap: 25px;
-        }
-    }
-}
-@include mobile {
-    section {
-        .products-content {
-            justify-content: center;
-        }
-    }
-}
-@include mobile1 {
-    section {
-        .products-content {
-            justify-content: center;
-        }
     }
 }

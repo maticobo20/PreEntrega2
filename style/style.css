@@ -12,7 +12,7 @@ body {
   font-style: italic;
   background-color: rgba(241, 241, 241, 0.6509803922);
 }
-@media (600px <= width <= 1400px) {
+@media (min-width: 600px) and (max-width: 1399px) {
   body {
     min-height: 100vh;
   }
@@ -28,16 +28,41 @@ header .back {
   background-color: #ff7f50;
   font-weight: bold;
 }
+@media (min-width: 600px) and (max-width: 1399px) {
+  header .back {
+    padding: 47px 0;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  header .back {
+    padding: 47px 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  header .back {
+    padding: 47px 0;
+  }
+}
 header .container {
   max-width: 1100px;
   margin: 0 auto;
   font-style: italic;
   font-size: 20px;
 }
+@media (min-width: 320px) and (max-width: 499px) {
+  header .container a .logo {
+    padding: 5px;
+  }
+}
 header .container a .logo p {
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
+}
+@media (min-width: 600px) and (max-width: 1399px) {
+  header .container a .logo p {
+    padding: 10px;
+  }
 }
 header .container a .logo:hover {
   color: #15a4f9;
@@ -52,12 +77,83 @@ header .menu {
   justify-content: space-between;
   z-index: 1000;
 }
+@media (min-width: 600px) and (max-width: 1399px) {
+  header .menu {
+    padding: 30px;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  header .menu {
+    padding: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  header .menu {
+    padding: 20px;
+  }
+}
 header .menu label {
   display: none;
   cursor: pointer;
 }
+@media (min-width: 600px) and (max-width: 1399px) {
+  header .menu label {
+    display: initial;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  header .menu label {
+    display: initial;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  header .menu label {
+    display: initial;
+  }
+}
 header .menu .navbar {
   --bs-navbar-padding-y: 0;
+}
+@media (min-width: 600px) and (max-width: 1399px) {
+  header .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ff7f50;
+    display: none;
+  }
+  header .menu .navbar ul li {
+    width: 100%;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  header .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ff7f50;
+    display: none;
+    width: 95%;
+  }
+  header .menu .navbar ul li {
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  header .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ff7f50;
+    display: none;
+    width: 95%;
+  }
+  header .menu .navbar ul li {
+    width: 100%;
+  }
 }
 header .menu ul li {
   position: relative;
@@ -78,95 +174,23 @@ header .uldl, header ol, header ul {
 header #menu {
   display: none;
 }
+@media (min-width: 600px) and (max-width: 1399px) {
+  header #menu:checked ~ .navbar {
+    display: initial;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  header #menu:checked ~ .navbar {
+    display: initial;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  header #menu:checked ~ .navbar {
+    display: initial;
+  }
+}
 header .menu-icono {
   width: 25px;
-}
-@media (600px <= width <= 1400px) {
-  header a .logo p {
-    padding: 10px;
-  }
-  header .menu {
-    padding: 30px;
-  }
-  header .menu label {
-    display: initial;
-  }
-  header .menu .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #ff7f50;
-    display: none;
-  }
-  header .menu .navbar ul li {
-    width: 100%;
-  }
-  header .back {
-    padding: 47px 0;
-  }
-  header #menu:checked ~ .navbar {
-    display: initial;
-  }
-}
-@media (500px <= width <= 600px) {
-  header .container .logo p {
-    font-size: 23px;
-  }
-  header .menu {
-    padding: 30px;
-  }
-  header .menu label {
-    display: initial;
-  }
-  header .menu .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #ff7f50;
-    display: none;
-    width: 95%;
-  }
-  header .menu .navbar ul li {
-    width: 100%;
-  }
-  header .back {
-    padding: 47px 0;
-  }
-}
-header #menu:checked ~ .navbar {
-  display: initial;
-}
-@media (320px <= width <= 500px) {
-  header .container .logo {
-    padding: 5px;
-    font-size: 23px;
-  }
-  header .menu {
-    padding: 20px;
-  }
-  header .menu label {
-    display: initial;
-  }
-  header .menu .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #ff7f50;
-    display: none;
-    width: 95%;
-  }
-  header .menu .navbar ul li {
-    width: 100%;
-  }
-  header .back {
-    padding: 47px 0;
-  }
-  header #menu:checked ~ .navbar {
-    display: initial;
-  }
 }
 
 footer {
@@ -207,19 +231,79 @@ main .banner {
   border-radius: 10px;
   margin-top: 30px;
 }
+@media (min-width: 600px) and (max-width: 1399px) {
+  main .banner {
+    height: 45vh;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  main .banner {
+    height: 40vh;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  main .banner {
+    height: 38vh;
+  }
+}
 main .banner-txt {
   padding-top: 100px;
   margin-left: 50px;
+}
+@media (min-width: 600px) and (max-width: 1399px) {
+  main .banner-txt {
+    padding: 30px 0;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  main .banner-txt {
+    padding: 30px 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  main .banner-txt {
+    padding-top: 10px;
+  }
 }
 main .bannerh2 {
   letter-spacing: 10px;
   font-weight: bold;
   font-size: 60px;
 }
+@media (min-width: 600px) and (max-width: 1399px) {
+  main .bannerh2 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  main .bannerh2 {
+    font-size: 38px;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  main .bannerh2 {
+    font-size: 35px;
+  }
+}
 main .bannerh6 {
   font-size: 80px;
   font-weight: bold;
   text-shadow: 1px 2px 2px white, 0 0 5px #ff7f50;
+}
+@media (min-width: 600px) and (max-width: 1399px) {
+  main .bannerh6 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  main .bannerh6 {
+    font-size: 45px;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  main .bannerh6 {
+    font-size: 42px;
+  }
 }
 
 section #lista1 {
@@ -243,6 +327,22 @@ section .products-content {
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 30px;
+}
+@media (min-width: 600px) and (max-width: 1399px) {
+  section .products-content {
+    justify-content: center;
+    gap: 25px;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  section .products-content {
+    justify-content: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  section .products-content {
+    justify-content: center;
+  }
 }
 section .product {
   text-align: center;
@@ -273,28 +373,27 @@ section .price {
   font-weight: 800;
 }
 
-@media (600px <= width <= 1400px) {
-  section .products-content {
-    justify-content: center;
-    gap: 25px;
-  }
-}
-@media (500px <= width <= 600px) {
-  section .products-content {
-    justify-content: center;
-  }
-}
-@media (320px <= width <= 500px) {
-  section .products-content {
-    justify-content: center;
-  }
-}
 .about {
   padding: 80px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 600px) and (max-width: 1399px) {
+  .about {
+    padding: 50px;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  .about {
+    padding: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  .about {
+    padding: 10px;
+  }
 }
 
 .txt {
@@ -305,21 +404,6 @@ section .price {
   font-style: italic;
 }
 
-@media (600px <= width <= 1400px) {
-  .about {
-    padding: 50px;
-  }
-}
-@media (500px <= width <= 600px) {
-  .about {
-    padding: 10px;
-  }
-}
-@media (320px <= width <= 500px) {
-  .about {
-    padding: 10px;
-  }
-}
 .container34 .accordion {
   margin: 0 auto;
   width: 100%;
@@ -342,6 +426,24 @@ section .price {
   font-weight: 500;
   cursor: pointer;
   position: relative;
+}
+@media (min-width: 600px) and (max-width: 1399px) {
+  .accordion {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  .accordion {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  .accordion {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 label {
@@ -372,28 +474,22 @@ input[type=checkbox]:checked ~ .content {
   padding: 20px 20px;
 }
 
-@media (600px <= width <= 1400px) {
-  .accordion {
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-}
-@media (500px <= width <= 600px) {
-  .accordion {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-}
-@media (320px <= width <= 500px) {
-  .accordion {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-}
 div .contacto1 {
   margin-left: 50px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  div .contacto1 {
+    margin: 0 10px;
+    width: 190%;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  div .contacto1 {
+    margin: 0 10px;
+    width: 185%;
+  }
 }
 
 h4 {
@@ -406,6 +502,24 @@ h4 {
 .form-group {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 600px) and (max-width: 1399px) {
+  .form-group {
+    width: 50%;
+    padding: 0 10px;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  .form-group {
+    width: 50%;
+    margin-left: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  .form-group {
+    width: 50%;
+    margin-left: 0;
+  }
 }
 
 div label {
@@ -424,6 +538,12 @@ div label {
   color: #000000;
   outline: none;
   text-align: left;
+}
+@media (min-width: 600px) and (max-width: 1399px) {
+  .contacto1, textarea {
+    margin-left: 10px;
+    width: 85%;
+  }
 }
 
 .contacto1::placeholder, textarea::placeholder {
@@ -449,53 +569,29 @@ div label {
   float: right;
   padding: 0 30px;
 }
+@media (min-width: 600px) and (max-width: 1399px) {
+  .img-contacto1 .width {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  .img-contacto1 .width {
+    margin-left: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  .img-contacto1 .width {
+    margin-right: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 0 30px;
+  }
+}
 
-@media (600px <= width <= 1400px) {
-  .form-group {
-    width: 50%;
-    padding: 0 10px;
-  }
-  .width {
-    width: 100%;
-    padding: 0 30px;
-  }
-  .contact1, textarea {
-    margin-left: 10px;
-    width: 85%;
-  }
-}
-@media (500px <= width <= 600px) {
-  .form-group {
-    width: 50%;
-    margin-left: 0;
-  }
-  .img-contacto1 .width {
-    margin-right: 5px;
-    margin-bottom: 30px;
-    width: 100%;
-    padding: 0 30px;
-  }
-  form .contacto1 {
-    margin: 0 10px;
-    width: 190%;
-  }
-}
-@media (320px <= width <= 500px) {
-  .form-group {
-    width: 50%;
-    margin-left: 0;
-  }
-  .img-contacto1 .width {
-    margin-right: 5px;
-    margin-bottom: 30px;
-    width: 100%;
-    padding: 0 30px;
-  }
-  form .contacto1 {
-    margin: 0 10px;
-    width: 185%;
-  }
-}
 h1 {
   font-size: 50px;
   font-weight: bold;
@@ -508,20 +604,31 @@ h1 {
 
 .btn-banner {
   display: inline-block;
-  padding: 15px 30px;
+  padding: 12px 25px;
   background-color: #000000;
   color: white;
   border: none;
   text-transform: uppercase;
   margin-top: 18px;
   border-radius: 5px;
-  font-size: 23px;
+  font-size: 20px;
 }
 .btn-banner:active {
   background-color: #add8e6;
 }
 .btn-banner:hover {
   transform: scale(1.01);
+}
+@media (min-width: 600px) and (max-width: 1399px) {
+  .btn-banner {
+    border-radius: 8px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  .btn-banner {
+    padding: 10px 20px;
+  }
 }
 
 .btn-2 {
@@ -559,6 +666,21 @@ form .btn-foro:active {
 form .btn-foro:hover {
   transform: scale(1.01);
 }
+@media (min-width: 600px) and (max-width: 1399px) {
+  form .btn-foro {
+    margin-left: 60px;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  form .btn-foro {
+    margin-left: 60px;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  form .btn-foro {
+    margin-left: 60px;
+  }
+}
 
 .search-input {
   float: left;
@@ -575,6 +697,13 @@ form .btn-foro:hover {
 .search-input:hover {
   transform: scale(1.01);
 }
+@media (min-width: 320px) and (max-width: 499px) {
+  .search-input {
+    margin-left: 20px;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
 
 .select-order {
   position: relative;
@@ -585,88 +714,21 @@ form .btn-foro:hover {
   outline: 0;
   cursor: pointer;
 }
-
-@media (600px <= width <= 1400px) {
-  main .banner {
-    height: 45vh;
-  }
-  main .banner-txt {
-    padding: 30px 0;
-  }
-  main .btn-banner {
-    border-radius: 8px;
-    margin-top: 0;
-  }
-  main .bannerh2 {
-    font-size: 50px;
-  }
-  main .bannerh6 {
-    font-weight: bold;
-    font-size: 60px;
-    text-shadow: 1px 2px 2px white, 0 0 5px #ff7f50;
-  }
-  form .btn-foro {
-    margin-left: 60px;
-  }
+@media (min-width: 600px) and (max-width: 1399px) {
   .select-order {
     left: 80px;
     width: 35%;
   }
 }
-@media (500px <= width <= 600px) {
-  main .banner {
-    height: 45vh;
-  }
-  main .banner-txt {
-    padding: 30px 0;
-  }
-  main .bannerh2 {
-    font-size: 38px;
-  }
-  main .bannerh6 {
-    font-size: 45px;
-    font-weight: bold;
-    text-shadow: 1px 2px 2px white, 0 0 5px #ff7f50;
-  }
-  form .btn-foro {
-    margin-left: 60px;
-  }
+@media (min-width: 500px) and (max-width: 599px) {
   .select-order {
     left: 25px;
   }
 }
-@media (320px <= width <= 500px) {
-  h1 {
-    font-size: 35px;
-  }
-  main .banner {
-    height: 45vh;
-  }
-  main .banner-txt {
-    padding-top: 10px;
-  }
-  main .btn-banner {
-    padding: 10px 20px;
-  }
-  main .bannerh2 {
-    font-size: 38px;
-  }
-  main .bannerh6 {
-    font-size: 60px;
-    font-weight: bold;
-    text-shadow: 1px 2px 2px white, 0 0 5px #ff7f50;
-  }
-  .search-input {
-    margin-left: 20px;
-    width: 80%;
-    margin-bottom: 10px;
-  }
+@media (min-width: 320px) and (max-width: 499px) {
   .select-order {
     left: 25px;
     width: 35%;
-  }
-  form .btn-foro {
-    margin-left: 60px;
   }
 }
 

@@ -25,6 +25,18 @@
             position: relative;
         }
     }
+    @include mq-large {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    @include mq-medium {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    @include mq-small {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 label {
     background-color: $primary-color;
@@ -51,23 +63,5 @@ input[type='checkbox'] {
     &:checked ~ .content {
         max-height: 600px;
         padding: 20px 20px;
-    }
-}
-@include tablet {
-    .accordion {
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-}
-@include mobile {
-    .accordion {
-    padding-left: 5px;
-    padding-right: 5px;
-    }
-}
-@include mobile1 {
-    .accordion {
-        padding-left: 5px;
-        padding-right: 5px;
     }
 }

@@ -9,19 +9,26 @@ h1 {
 }
 .btn-banner {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 12px 25px;
     background-color: $secundary-color;
     color: white;
     border: none;
     text-transform: uppercase;
     margin-top: 18px;
     border-radius: 5px;
-    font-size: 23px;
+    font-size: 20px;
     &:active {
         background-color: $cuarto-color;
     }
     &:hover {
         transform: scale(1.01);
+    }
+    @include mq-large {
+        border-radius: 8px;
+        margin-top: 0;
+    }
+    @include mq-small {
+        padding: 10px 20px;
     }
 }
 .btn-2 {
@@ -59,6 +66,15 @@ form {
         &:hover {
             transform: scale(1.01);
         }
+        @include mq-large {
+            margin-left: 60px;
+        }
+        @include mq-medium {
+            margin-left: 60px;
+        }
+        @include mq-small {
+            margin-left: 60px;
+        }
     }
 }
 .search-input {
@@ -75,6 +91,11 @@ form {
     &:hover {
         transform: scale(1.01);
     }
+    @include mq-small {
+        margin-left: 20px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
 }
 
 .select-order {
@@ -85,102 +106,15 @@ form {
     border-radius: 50px;
     outline: 0;
     cursor: pointer;
-    }
-
-@include tablet {
-    main {
-        .banner {
-            height: 45vh;
-        }
-        .banner-txt {
-            padding: 30px 0;
-        }
-        .btn-banner {
-            border-radius: 8px;
-            margin-top: 0;
-        }
-        .bannerh2 {
-            font-size: 50px;
-        }
-        .bannerh6 {
-            font-weight: bold;
-            font-size: 60px;
-            text-shadow: 1px 2px 2px white, 0 0 5px $primary-color;
-        }
-    }
-    form {
-        .btn-foro {
-            margin-left: 60px;
-        }
-    }
-    .select-order {
+    @include mq-large {
         left: 80px;
         width: 35%;
     }
-}
-
-@include mobile {
-    main {
-        .banner {
-            height: 45vh;
-        }
-        .banner-txt {
-            padding: 30px 0;
-        }
-        .bannerh2 {
-            font-size: 38px;
-        }
-        .bannerh6 {
-            font-size: 45px;
-            font-weight: bold;
-            text-shadow: 1px 2px 2px white, 0 0 5px $primary-color;
-        }
-    }
-    form {
-        .btn-foro {
-            margin-left: 60px;
-        }
-    }
-    .select-order {
+    @include mq-medium {
         left: 25px;
     }
-}
-@include mobile1 {
-    h1 {
-        font-size: 35px;
-    }
-    main {
-        .banner {
-            height: 45vh;
-        }
-        .banner-txt {
-            padding-top: 10px;
-        }
-        .btn-banner {
-            padding: 10px 20px;
-        }
-
-        .bannerh2 {
-            font-size: 38px;
-        }
-        .bannerh6 {
-            font-size: 60px;
-            font-weight: bold;
-            text-shadow: 1px 2px 2px white, 0 0 5px $primary-color;
-        }
-    }
-    .search-input {
-        margin-left: 20px;
-        width: 80%;
-        margin-bottom: 10px;
-    }
-    .select-order {
+    @include mq-small {
         left: 25px;
         width: 35%;
-    }
-    form {
-        .btn-foro {
-            margin-left: 60px;
-        }
     }
 }

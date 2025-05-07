@@ -3,6 +3,15 @@ header {
         padding: 32px 0;
         background-color: $primary-color;
         font-weight: bold;
+        @include mq-large {
+            padding: 47px 0;
+        }
+        @include mq-medium {
+            padding: 47px 0;
+        }
+        @include mq-small {
+            padding: 47px 0;
+        }
     }
     .container {
         max-width: 1100px;
@@ -11,10 +20,16 @@ header {
         font-size: 20px;
         a {
             .logo {
+                @include mq-small {
+                    padding: 5px;
+                }
                 p {
                     color: $secundary-color;
                     font-weight: bold;
                     text-transform: uppercase;
+                    @include mq-large {
+                        padding: 10px;
+                    }
                 }
                 &:hover {
                     color: $terciario-color;
@@ -32,12 +47,71 @@ header {
         align-items: center;
         justify-content: space-between;
         z-index: 1000;
+        @include mq-large {
+            padding: 30px;
+        }
+        @include mq-medium {
+            padding: 30px;
+        }
+        @include mq-small {
+            padding: 20px;
+        }
         label {
             display: none;
             cursor: pointer;
+            @include mq-large {
+                display: initial;
+            }
+            @include mq-medium {
+                display: initial;
+            }
+            @include mq-small {
+                display: initial;
+            }
         }
         .navbar {
             --bs-navbar-padding-y: 0;
+            @include mq-large {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: $primary-color;
+                display: none;
+                ul {
+                    li {
+                        width: 100%;
+                    }
+                }
+            }
+            @include mq-medium {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: $primary-color;
+                display: none;
+                width: 95%;
+                ul {
+                    li {
+                        width: 100%;
+                    }
+                }
+            }
+            @include mq-small {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: $primary-color;
+                display: none;
+                width: 95%;
+                ul {
+                    li {
+                        width: 100%;
+                    }
+                }
+            }
         }
         ul {
             li {
@@ -60,113 +134,23 @@ header {
     }
     #menu {
         display: none;
+        @include mq-large {
+            &:checked ~ .navbar {
+                display: initial;
+            }
+        }
+        @include mq-medium {
+            &:checked ~ .navbar {
+                display: initial;
+            }
+        }
+        @include mq-small {
+            &:checked ~ .navbar {
+                display: initial;
+            }
+        }
     }
     .menu-icono {
         width: 25px;
-    }
-    @include tablet {
-        a {
-            .logo {
-                p {
-                    padding: 10px;
-                }
-            }
-        }
-        .menu {
-            padding: 30px;
-            label {
-                display: initial;
-            }
-            .navbar {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background-color: $primary-color;
-                display: none;
-                ul {
-                    li {
-                        width: 100%;
-                    }
-                }
-            }
-        }
-        .back {
-            padding: 47px 0;
-        }
-        
-        #menu:checked ~ .navbar {
-            display: initial;
-        }
-    }
-    @include mobile {
-        .container {
-            .logo {
-                p {
-                 font-size: 23px;   
-                }
-            }
-        }
-        .menu {
-            padding: 30px;
-            label {
-                display: initial;
-            }
-            .navbar {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background-color: $primary-color;
-                display: none;
-                width: 95%;
-                ul {
-                    li {
-                        width: 100%;
-                    }
-                }
-            }
-        }
-        .back {
-            padding: 47px 0;
-        }
-    }
-    #menu:checked ~ .navbar {
-        display: initial;
-    }
-    @include mobile1 {
-        .container {
-            .logo {
-                padding: 5px;
-                font-size: 23px;
-            }
-        }
-        .menu {
-            padding: 20px;
-            label {
-                display: initial;
-            }
-            .navbar {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background-color: $primary-color;
-                display: none;
-                width: 95%;
-                ul {
-                    li {
-                        width: 100%;
-                    }
-                }
-            }
-        }
-        
-        .back {
-            padding: 47px 0;
-        }
-        #menu:checked ~ .navbar {
-            display: initial;
-        }
     }
 }

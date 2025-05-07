@@ -4,6 +4,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include mq-large {
+        padding: 50px;
+    }
+    @include mq-medium {
+        padding: 10px;
+    }
+    @include mq-small {
+        padding: 10px;
+    }
 }
 .txt {
     margin-bottom: 30px;
@@ -11,20 +20,4 @@
     text-align: left;
     font-size: 20px;
     font-style: italic;
-}
-@include tablet {
-    .about {
-        padding: 50px;
-    }
-}
-
-@include mobile {
-    .about {
-        padding: 10px;
-    }
-}
-@include mobile1 {
-    .about {
-        padding: 10px;
-    }
 }
