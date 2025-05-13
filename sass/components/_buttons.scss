@@ -6,6 +6,15 @@ h1 {
     text-align: center;
     margin-bottom: 40px;
     margin-top: 40px;
+    @include mq-large {
+        font-size: 43px;
+    }
+    @include mq-medium {
+        font-size: 40px;
+    }
+    @include mq-small {
+        font-size: 35px;
+    }
 }
 .btn-banner {
     display: inline-block;
