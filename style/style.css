@@ -63,6 +63,21 @@ header .menu {
   right: 0;
   z-index: 1000;
 }
+@media (min-width: 600px) and (max-width: 1399px) {
+  header .menu {
+    padding: 30px;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  header .menu {
+    padding: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  header .menu {
+    padding: 20px;
+  }
+}
 header .menu .logo img {
   display: block;
   width: auto;
@@ -102,21 +117,6 @@ header .menu .logo img {
     margin-top: -20px;
   }
 }
-@media (min-width: 600px) and (max-width: 1399px) {
-  header .menu {
-    padding: 30px;
-  }
-}
-@media (min-width: 500px) and (max-width: 599px) {
-  header .menu {
-    padding: 30px;
-  }
-}
-@media (min-width: 320px) and (max-width: 499px) {
-  header .menu {
-    padding: 20px;
-  }
-}
 header .menu label {
   display: none;
   cursor: pointer;
@@ -142,7 +142,7 @@ header .menu .navbar {
 @media (min-width: 600px) and (max-width: 1399px) {
   header .menu .navbar {
     position: absolute;
-    top: 100%;
+    top: 61%;
     left: 0;
     right: 0;
     background-color: #ff7f50;
@@ -155,12 +155,11 @@ header .menu .navbar {
 @media (min-width: 500px) and (max-width: 599px) {
   header .menu .navbar {
     position: absolute;
-    top: 100%;
+    top: 61%;
     left: 0;
     right: 0;
     background-color: #ff7f50;
     display: none;
-    width: 95%;
   }
   header .menu .navbar ul li {
     width: 100%;
@@ -169,12 +168,11 @@ header .menu .navbar {
 @media (min-width: 320px) and (max-width: 499px) {
   header .menu .navbar {
     position: absolute;
-    top: 100%;
+    top: 61%;
     left: 0;
     right: 0;
     background-color: #ff7f50;
     display: none;
-    width: 95%;
   }
   header .menu .navbar ul li {
     width: 100%;

@@ -39,6 +39,15 @@ header {
         left: 0;
         right: 0;
         z-index: 1000;
+        @include mq-large {
+            padding: 30px;
+        }
+        @include mq-medium {
+            padding: 30px;
+        }
+        @include mq-small {
+            padding: 20px;
+        }
         .logo {
             img {
                 display: block;
@@ -71,15 +80,6 @@ header {
                 
             }
         }
-        @include mq-large {
-            padding: 30px;
-        }
-        @include mq-medium {
-            padding: 30px;
-        }
-        @include mq-small {
-            padding: 20px;
-        }
         label {
             display: none;
             cursor: pointer;
@@ -97,7 +97,7 @@ header {
             --bs-navbar-padding-y: 0;
             @include mq-large {
                 position: absolute;
-                top: 100%;
+                top: 61%;
                 left: 0;
                 right: 0;
                 background-color: $primary-color;
@@ -110,12 +110,11 @@ header {
             }
             @include mq-medium {
                 position: absolute;
-                top: 100%;
+                top: 61%;
                 left: 0;
                 right: 0;
                 background-color: $primary-color;
                 display: none;
-                width: 95%;
                 ul {
                     li {
                         width: 100%;
@@ -124,12 +123,11 @@ header {
             }
             @include mq-small {
                 position: absolute;
-                top: 100%;
+                top: 61%;
                 left: 0;
                 right: 0;
                 background-color: $primary-color;
                 display: none;
-                width: 95%;
                 ul {
                     li {
                         width: 100%;
