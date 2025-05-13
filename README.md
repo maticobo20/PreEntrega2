@@ -1,6 +1,7 @@
 https://maticobo20.github.io/PreEntrega2/
 
-## Librerias utilizadas
+## Tecnologías utilizadas
 -ANIMATE.css url (https://animate.style/)
 -BS
 -Google Fonts
+-CSS y SASS
