@@ -142,7 +142,7 @@ header .menu .navbar {
 @media (min-width: 600px) and (max-width: 1399px) {
   header .menu .navbar {
     position: absolute;
-    top: 61%;
+    top: 79px;
     left: 0;
     right: 0;
     background-color: #ff7f50;
@@ -155,7 +155,7 @@ header .menu .navbar {
 @media (min-width: 500px) and (max-width: 599px) {
   header .menu .navbar {
     position: absolute;
-    top: 61%;
+    top: 79px;
     left: 0;
     right: 0;
     background-color: #ff7f50;
@@ -168,7 +168,7 @@ header .menu .navbar {
 @media (min-width: 320px) and (max-width: 499px) {
   header .menu .navbar {
     position: absolute;
-    top: 61%;
+    top: 79px;
     left: 0;
     right: 0;
     background-color: #ff7f50;

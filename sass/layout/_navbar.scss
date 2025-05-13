@@ -97,7 +97,7 @@ header {
             --bs-navbar-padding-y: 0;
             @include mq-large {
                 position: absolute;
-                top: 61%;
+                top: 79px;
                 left: 0;
                 right: 0;
                 background-color: $primary-color;
@@ -110,7 +110,7 @@ header {
             }
             @include mq-medium {
                 position: absolute;
-                top: 61%;
+                top: 79px;
                 left: 0;
                 right: 0;
                 background-color: $primary-color;
@@ -123,7 +123,7 @@ header {
             }
             @include mq-small {
                 position: absolute;
-                top: 61%;
+                top: 79px;
                 left: 0;
                 right: 0;
                 background-color: $primary-color;
