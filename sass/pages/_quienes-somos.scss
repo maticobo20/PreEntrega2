@@ -13,7 +13,7 @@
         }
         .info-nosotros {
             margin-right: 20px;
-            font-size: 20px;
+            font-size: 29px;
             flex: 1 1 55%;
             @include mq-large {
                 flex: 1 1 100%;
@@ -32,6 +32,7 @@
                 width: 100%;
                 height: auto;
                 border-radius: 10px;
+                padding: 0 15px 0 0;
             }
         }
     }

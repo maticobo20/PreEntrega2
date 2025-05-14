@@ -5,5 +5,3 @@ https://maticobo20.github.io/PreEntrega2/
 -BS
 -Google Fonts
 -CSS y SASS
-
-tengo q volver a esto

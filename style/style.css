@@ -223,7 +223,7 @@ footer {
   margin-top: auto;
 }
 
-footer h5 {
+footer h6 {
   font-style: italic;
   font-size: 18px;
   text-align: center;
@@ -384,7 +384,7 @@ section .product .product-txt .price {
 }
 section .product h4 {
   color: #000000;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 15px;
   text-align: center;
@@ -409,7 +409,7 @@ section .product h4 {
 }
 .about .flex-container .info-nosotros {
   margin-right: 20px;
-  font-size: 20px;
+  font-size: 29px;
   flex: 1 1 55%;
 }
 @media (min-width: 600px) and (max-width: 1399px) {
@@ -433,6 +433,7 @@ section .product h4 {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  padding: 0 15px 0 0;
 }
 
 .container34 .accordion {
@@ -523,20 +524,12 @@ div .contacto1 {
   }
 }
 
-h4 {
-  margin-top: 1em;
-  margin-left: 1.5em;
-  font-size: 20px;
-  font-weight: bold;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 600px) and (max-width: 1399px) {
   .form-group {
-    width: 50%;
     padding: 0 10px;
   }
 }
@@ -581,22 +574,13 @@ div label {
   color: #000000;
 }
 
-.mapa h2 {
-  font-size: 35px;
-  color: #000000;
-  text-shadow: 1px 2px 2px #ffffff, 0 0 5px #ff7f50;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
 .embed-responsive {
   text-align: center;
   border: 0;
 }
 
 .img-contacto1 .width {
-  width: 50%;
+  width: 40%;
   float: right;
   padding: 0 30px;
 }
@@ -604,6 +588,7 @@ div label {
   .img-contacto1 .width {
     width: 100%;
     padding: 0 30px;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 500px) and (max-width: 599px) {
@@ -644,8 +629,39 @@ h1 {
 }
 @media (min-width: 320px) and (max-width: 499px) {
   h1 {
+    font-size: 28px;
+  }
+}
+
+.mapa h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+  text-shadow: 1px 2px 2px white, 0 0 5px #ff7f50;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+@media (min-width: 600px) and (max-width: 1399px) {
+  .mapa h2 {
+    font-size: 43px;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  .mapa h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  .mapa h2 {
     font-size: 35px;
   }
+}
+
+.form-group h5 {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .btn-banner {
@@ -680,6 +696,7 @@ h1 {
 .btn-2 {
   display: inline-block;
   padding: 11px 25px;
+  font-size: 20px;
   background-color: #000000;
   color: white;
   border-radius: 5px;

@@ -13,17 +13,11 @@ div {
         }
     } 
 }
-h4 {
-    margin-top: 1em;
-    margin-left: 1.5em;
-    font-size: 20px;
-    font-weight: bold;
-}
+
 .form-group {
     display: flex;
     flex-direction: column;
     @include mq-large {
-        width: 50%;
         padding: 0 10px;
     }
     @include mq-medium {
@@ -60,28 +54,20 @@ div {
 .contacto1::placeholder, textarea::placeholder {
     color: $secundary-color;
 }
-.mapa {
-    h2 {
-        font-size: 35px;
-        color: $secundary-color;
-        text-shadow: 1px 2px 2px #ffffff, 0 0 5px $primary-color;
-        text-align: center;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-}
+
 .embed-responsive {
     text-align: center;
     border: 0;
 }
 .img-contacto1 {
     .width {
-        width: 50%;
+        width: 40%;
         float: right;
         padding: 0 30px;
         @include mq-large {
             width: 100%;
             padding: 0 30px;
+            margin-bottom: 30px;
         }
         @include mq-medium {
             margin-left: 5px;
