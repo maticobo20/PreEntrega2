@@ -397,34 +397,48 @@ section .price {
 }
 
 .about {
-  padding: 80px;
+  margin-top: 100px;
+  margin-left: 20px;
   min-height: 100vh;
+}
+.about .flex-container {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
   align-items: center;
 }
 @media (min-width: 600px) and (max-width: 1399px) {
-  .about {
-    padding: 50px;
+  .about .flex-container {
+    flex-direction: column;
+    text-align: center;
   }
 }
-@media (min-width: 500px) and (max-width: 599px) {
-  .about {
-    padding: 10px;
-  }
-}
-@media (min-width: 320px) and (max-width: 499px) {
-  .about {
-    padding: 10px;
-  }
-}
-
-.txt {
-  margin-bottom: 30px;
-  line-height: 1.5;
-  text-align: left;
+.about .flex-container .info-nosotros {
+  margin-right: 20px;
   font-size: 20px;
-  font-style: italic;
+  flex: 1 1 55%;
+}
+@media (min-width: 600px) and (max-width: 1399px) {
+  .about .flex-container .info-nosotros {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+.about .flex-container .img-nosotros {
+  flex: 1 1 40%;
+  max-width: 500px;
+}
+@media (min-width: 600px) and (max-width: 1399px) {
+  .about .flex-container .img-nosotros {
+    flex: 1 1 100%;
+    max-width: 70%;
+    margin-top: 10px;
+  }
+}
+.about .flex-container .img-nosotros img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .container34 .accordion {
@@ -676,6 +690,7 @@ h1 {
   color: white;
   border-radius: 5px;
   margin-top: 10px;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 .btn-2:active {

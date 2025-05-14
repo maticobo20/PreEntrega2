@@ -1,23 +1,38 @@
 .about {
-    padding: 80px;
+    margin-top: 100px;
+    margin-left: 20px;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include mq-large {
-        padding: 50px;
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        @include mq-large {
+            flex-direction: column;
+            text-align: center;
+        }
+        .info-nosotros {
+            margin-right: 20px;
+            font-size: 20px;
+            flex: 1 1 55%;
+            @include mq-large {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+        .img-nosotros {
+            flex: 1 1 40%;
+            max-width: 500px;
+            @include mq-large {
+                flex: 1 1 100%;
+                max-width: 70%;
+                margin-top: 10px;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
     }
-    @include mq-medium {
-        padding: 10px;
-    }
-    @include mq-small {
-        padding: 10px;
-    }
-}
-.txt {
-    margin-bottom: 30px;
-    line-height: 1.5;
-    text-align: left;
-    font-size: 20px;
-    font-style: italic;
 }
