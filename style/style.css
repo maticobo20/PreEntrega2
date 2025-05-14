@@ -363,6 +363,16 @@ section .product {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+@media (min-width: 500px) and (max-width: 599px) {
+  section .product {
+    padding: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+  section .product {
+    padding: 25px;
+  }
+}
 section .product:hover img {
   transform: scale(1.05);
 }

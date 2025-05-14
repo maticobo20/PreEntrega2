@@ -26,6 +26,12 @@ section {
         box-shadow: 0 4px 8px 0 $cuarto-color, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-bottom: 20px;
         margin-top: 20px;
+        @include mq-medium {
+            padding: 30px;
+        }
+        @include mq-small {
+            padding: 25px;
+        }
         &:hover img {
             transform: scale(1.05);
         }
