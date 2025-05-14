@@ -333,28 +333,17 @@ section #lista1 {
   max-width: 1200px;
   margin: 0 auto;
 }
-section .product h4 {
-  color: #000000;
-  font-size: 16px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  text-align: center;
-}
 section .products-content {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-between;
-  align-items: center;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-top: 30px;
+  margin: 30px auto;
+  gap: 30px;
 }
 @media (min-width: 600px) and (max-width: 1399px) {
   section .products-content {
     justify-content: center;
-    gap: 25px;
   }
 }
 @media (min-width: 500px) and (max-width: 599px) {
@@ -375,10 +364,7 @@ section .product {
   margin-top: 20px;
 }
 section .product:hover img {
-  transform: scale(1.2);
-}
-section .product-txt {
-  margin-top: 30px;
+  transform: scale(1.05);
 }
 section .product img {
   width: 250px;
@@ -387,13 +373,21 @@ section .product img {
   object-position: center;
   margin-bottom: 20px;
 }
-section .product p, section .precio {
-  font-size: 16px;
+section .product .product-txt {
+  margin-top: 30px;
+}
+section .product .product-txt .price {
+  font-size: 19px;
   color: #000000;
   margin-bottom: 15px;
+  font-weight: bold;
 }
-section .price {
-  font-weight: 800;
+section .product h4 {
+  color: #000000;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .about {
