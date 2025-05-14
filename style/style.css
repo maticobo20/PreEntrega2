@@ -409,7 +409,7 @@ section .product h4 {
 }
 .about .flex-container .info-nosotros {
   margin-right: 20px;
-  font-size: 29px;
+  font-size: 20px;
   flex: 1 1 55%;
 }
 @media (min-width: 600px) and (max-width: 1399px) {
@@ -554,7 +554,7 @@ div label {
 }
 
 .contacto1, textarea {
-  padding: 17px 25px;
+  padding: 15px 21px;
   border-radius: 25px;
   margin-bottom: 20px;
   background-color: #ff7f50;
@@ -649,7 +649,7 @@ h1 {
 }
 @media (min-width: 500px) and (max-width: 599px) {
   .mapa h2 {
-    font-size: 40px;
+    font-size: 38px;
   }
 }
 @media (min-width: 320px) and (max-width: 499px) {
